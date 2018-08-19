@@ -241,3 +241,15 @@ header {
 .entry-content .img-p {
     margin-bottom: 0.1rem;
 }
+
+
+
+.index_title {
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+    
+}
+h1 {
+    color: #0082ef;
+}
