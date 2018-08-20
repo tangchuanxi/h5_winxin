@@ -1,0 +1,52 @@
+.header {
+    margin: 10px 0 14px 0;
+    display: flex;
+    justify-content: left;
+}
+.header img{
+    height: 0.2rem;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.header span{
+    height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.16rem;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    background: #454e60;
+}
+.title_right {
+    background: #0082ef;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+}
+.title_right span{
+    color: #fff;
+    font-size: 0.14rem;
+}
+.title_right img{
+    height: 0.2rem;
+    margin-right: 10px;
+}
+.title_left {
+    font-size: 0.2rem;
+    background: #454e60;
+    padding: 4px 20px;
+    color: #fff;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 0.14rem;
+}
+h2 {
+    font-size: 0.18rem;
+}
