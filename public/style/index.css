@@ -41,7 +41,7 @@ h1, h2 {
     justify-content: center;
 }
 .banner {
-    padding:60px 0 70px 0 ;
+    padding:60px 0 30px 0 ;
     display: flex;
     justify-content: center;
 }
@@ -157,7 +157,7 @@ h1, h2 {
     display: flex;
     padding: 3px 10px;
 }
-.top_title div:first-child span{
+.top_title div:first-child p{
     font-size: 14px;
     display: inline-block;
     height: 14px;
@@ -165,6 +165,7 @@ h1, h2 {
     border-left: 1px solid #ddd;
     padding-left: 6px;
     letter-spacing: 2px;
+    white-space:nowrap;
 }
 .top_title div img{
     height: 14px;
@@ -243,3 +244,11 @@ body {
     -webkit-box-orient: vertical;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+footer img{
+    height: 0.3rem;
+}
