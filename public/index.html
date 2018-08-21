@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/GB-respond.css">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="./js/tool.js"></script>
     <link rel="stylesheet" href="./style/main.css" type="text/css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 
+</head>
     <body>
         <div class="index_title">
             <img src="./images/weixin_logo.png" alt="" style="height: 0.2rem">
@@ -27,13 +30,14 @@
         </div>
         <div class="jianjie">
             <p>
-                在信息时代，信息即生产力，数字化、智能化是企业未来发展的必然选择。企业微信老师看见对方立刻考虑实际的弗兰克介绍了肯定尽量快睡觉了解
+                在信息时代，信息即生产力.数字化、智能化是企业未来发展的必然选择。企业微信以“连接着”的角色，通过对人、资源、数据的连接，使得个体、时间、
+                空间价值最大化，从而带领企业共同走向智慧零售生态与数字化发展的未来。
             </p>
         </div>
 
         <div class="banner">
             <div class="banner_left" id="move_left">
-                <i class="fa fa-angle-left fa-3x"></i>
+                <i class="fa fa-angle-left fa-2x"></i>
             </div>
             <div class="ul">
                 <ul>
@@ -59,7 +63,7 @@
             </div>
 
             <div class="banner_left" id="move_right">
-                <i class="fa fa-angle-right fa-3x"></i>
+                <i class="fa fa-angle-right fa-2x"></i>
             </div>
         </div>
         <div>
@@ -87,7 +91,7 @@
                                     <span>太古饮料</span>
 
                                 </h1>
-                                <p>低成本搭建搞笑沟通平台与移动门户</p>
+                                <p>低成本搭建高效沟通平台与移动门户</p>
                                 <div class="img">
                                     <div class="first-img">
                                         <img src="./images/taigu_title.jpg" alt="">
@@ -96,7 +100,7 @@
                                         <img src="./images/taigu_title.jpg" alt="">
                                     </div>
                                 </div>
-                                <p class="shuoming">0成本，无推广，接入24小时内让员工上手企业微信；消息推送的成功率高于99%.....</p>
+                                <p class="shuoming">0成本无推广，接入24小时内让员工80%上手企业微信；消息上手企业微信,消息上手企业微信,消息上手企业微信,消息送达的成功率高于99%</p>
                                 <div class="main_btn clearfix">
                                     <a href="">
                                         <span>详情</span>
@@ -109,10 +113,9 @@
                             <div>
                                 <h1 style="position: relative">
                                     <i class="fa fa-dot-circle-o m-circle"></i>
-                                    <span>太古饮料</span>
-
+                                    <span>影儿时尚集团</span>
                                 </h1>
-                                <p>低成本搭建搞笑沟通平台与移动门户</p>
+                                <p>线上与线下的信任闭环提升销售转化</p>
                                 <div class="img">
                                     <div class="first-img">
                                         <img src="./images/taigu_title.jpg" alt="">
@@ -121,7 +124,7 @@
                                         <img src="./images/taigu_title.jpg" alt="">
                                     </div>
                                 </div>
-                                <p class="shuoming">0成本，无推广，接入24小时内让员工上手企业微信；消息推送的成功率高于99%.....</p>
+                                <p class="shuoming">以企业微信连接1000家门店导购与消费者，打破时间、距离，实现“你有需求，我很专业”的“无边界”服务</p>
                                 <div class="main_btn clearfix">
                                     <a href="">
                                         <span>详情</span>
@@ -149,38 +152,81 @@
                 </div>
             </div>
         </div>
-
+        <script>
+                // $(function () {
+                //     let tag = true;
+                //     let animateTime = 300;
+                //     console.log("ready执行");
+                //     console.log(window.screen.width)
+                //     let screenWidth = window.screen.width;
+                //     let singleIconWidth = (screenWidth*70/100 - 20) / 3;
+                //     let singleIconHeight = singleIconWidth * 66 / 225 + 1;
+                //     console.log("计算宽度");
+                //     console.log(singleIconWidth)
+                //     $(".banner-img").width(singleIconWidth);
+                //     $('.ul,.banner_left').height(singleIconHeight);
+                //     $('.banner_left i').height(singleIconHeight);
+        
+                //     function moveLeft() {
+                //         console.log("clo")
+                //         // debugger
+                //         let li_len = $('.ul ul li').length - 3;
+                        
+                //         let left_width = $('.ul ul').css('left');
+                //         if(tag){
+                //             if(Math.abs(parseInt(left_width)) < li_len * singleIconWidth){
+                //                 left_width = parseInt(left_width) - singleIconWidth -10;
+                //                 $(".ul ul").animate({left: left_width  + 'px'}, animateTime);
+                //             }
+                //             tag = false;
+                //             setTimeout(() => {
+                //                tag = true; 
+                //             }, animateTime);
+                //         }
+                //     }
+        
+                //     function moveRight() {
+                //         let left_width = $('.ul ul').css('left');
+                //         if(tag){
+                //             if( parseInt(left_width) < 0){
+                //                 left_width = parseInt(left_width) + singleIconWidth + 10;
+                //                 $(".ul ul").animate({left: left_width + 'px'}, animateTime);
+                //             }
+                //             tag = false;
+                //             setTimeout(() => {
+                //                tag = true; 
+                //             }, animateTime);
+                //         }
+                //     }
+                //     // 点击右移动事件
+                //     $('#move_right').click(function(){
+                //         moveRight()
+                //     })
+        
+                //     // 点击左边移动事件
+        
+                //     $('#move_left').click(function(){
+                //         moveLeft();
+                //     })
+                    
+                //     $('.banner').on('swipeleft', function(){
+                //         moveLeft();
+                //     })
+                //     $('.banner').on('swiperight', function(){
+                //         moveRight();
+                //     })
+                //     $('.ul img').on('touchstart', function(){
+                //         let src = $(this).attr('src');
+                //         $(this).attr('src', src.replace('/a', '/b'))
+                //     })
+                //     $('.ul img').on('touchend', function(){
+                //         let src = $(this).attr('src');
+                //         $(this).attr('src', src.replace('/b', '/a'))
+                //     })
+        
+                // });
+        </script>
+    
     </body>
-    <script>
-        $(function () {
-            console.log("ready执行");
-            console.log(window.screen.width)
-            let screenWidth = window.screen.width;
-            let singleIconWidth = (screenWidth*70/100 - 20) / 3;
-            let singleIconHeight = singleIconWidth * 66 / 225 + 2;
-            console.log("计算宽度");
-            console.log(singleIconWidth)
-            $(".banner-img").width(singleIconWidth);
-            $('.ul,.banner_left').height(singleIconHeight);
 
-            $('#move_right').click(function(){
-                let left_width = $('.ul ul').css('left');
-                if( parseInt(left_width) < 0){
-                    left_width = parseInt(left_width) + singleIconWidth + 10;
-                    $(".ul ul").animate({left: left_width + 'px'});
-                }
-            })
-            $('#move_left').click(function(){
-                console.log("clo")
-                // debugger
-                let li_len = $('.ul ul li').length - 3;
-                
-                let left_width = $('.ul ul').css('left');
-                if(Math.abs(parseInt(left_width)) < li_len * singleIconWidth){
-                    left_width = parseInt(left_width) - singleIconWidth -10;
-                    $(".ul ul").animate({left: left_width  + 'px'});
-                }
-            })
-        });
-    </script>
 </html>
