@@ -96,7 +96,29 @@ $(function () {
         });
     })
 
-    $('.toDetail_taigu1').click(function () {
-        window.location.href = "./detail_taigu1.html";
+    // 太古
+    $('.toDetail_taigu1,.toDetail_taigu2,.toDetail_taigu3').click(function () {
+        console.log($(this).attr('class'))
+        window.location.href = "./detail_"+ $(this).attr('class').match(/taigu\d{1}/g)[0] +".html";
+    })
+    // 影儿集团
+    $('.toDetail_yinger1,.toDetail_yinger2,.toDetail_yinger3').click(function () {
+        console.log($(this).attr('class'))
+        window.location.href = "./detail_"+ $(this).attr('class').match(/yinger\d{1}/g)[0] +".html";
+    })
+    // 长安
+    $('.toDetail_changan1,.toDetail_changan2,.toDetail_changan3').click(function () {
+        console.log($(this).attr('class'))
+        window.location.href = "./detail_"+ $(this).attr('class').match(/changan\d{1}/g)[0] +".html";
+    })
+    // 玉才
+    $('.toDetail_yucai1,.toDetail_yucai2,.toDetail_yucai3').click(function () {
+        console.log($(this).attr('class'))
+        window.location.href = "./detail_"+ $(this).attr('class').match(/yucai\d{1}/g)[0] +".html";
+    })
+    // 德邦
+    $('.toDetail_debang1,.toDetail_debang2,.toDetail_debang3').click(function () {
+        console.log($(this).attr('class'))
+        window.location.href = "./detail_"+ $(this).attr('class').match(/debang\d{1}/g)[0] +".html";
     })
 });
