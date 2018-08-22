@@ -94,17 +94,9 @@ $(function () {
             duration: 500,
             easing: "swing"
         });
-
-
-
-        // document.getElementById(targetBoxId).scrollIntoView({
-        //     behavior: "smooth",
-        //     block: "start",
-        //     inline: "nearest"
-        // });
     })
 
-    $('#toDetail').click(function () {
-        window.location.href = "./detail.html";
+    $('.toDetail_taigu1').click(function () {
+        window.location.href = "./detail_taigu1.html";
     })
 });
