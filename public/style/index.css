@@ -25,23 +25,31 @@ h1, h2 {
     letter-spacing: 4px;
 }
 .title_main_font p{
-    margin-top: 60px;
-    font-size: 0.13rem;
-    letter-spacing: 2px;
+    margin-top: 30px;
+    font-size: 0.14rem;
+    letter-spacing: 4px;
 }
 .jianjie {
-    margin-top: 80px;
+    margin-top: 0px;
+    width: 100%;
+    /* margin-bottom: 20px; */
 }
 .jianjie p {
-    text-align: justify;
+    text-align: center;
+    line-height: 0.24rem;
+
 }
 .index_title {
-    padding-top: 26px;
-    display: flex;
-    justify-content: center;
+    padding-top: 40px;
+
+}
+.index_title img{
+    width: 40%;
+    margin: 0 auto;
+    margin-left: 30%;
 }
 .banner {
-    padding:60px 0 30px 0 ;
+    padding:0px 0 24px 0 ;
     display: flex;
     justify-content: center;
 }
@@ -85,11 +93,10 @@ h1, h2 {
 .clearfloat{zoom:1}
 
 .mian_content  {
-    width: 90%;
+    width: 86%;
 }
 .main_box {
-    padding: 0.14rem;
-    border: 1px solid #eee;
+    /* padding: 0.14rem; */
 }
 .main_box .img {
     display: flex;    
@@ -129,9 +136,6 @@ h1, h2 {
     border-bottom: 30px solid #78829b;
     border-right: 20px solid transparent;
 }
-.main_box {
-    margin-right: 20px;
-}
 .container {
     display: flex;
     position: relative;
@@ -144,14 +148,15 @@ h1, h2 {
 .top_title {
     top: 20px;
     height: 20px;
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 0.1rem;
+    background: #0082f0;
 }
 .top_title div:first-child{
-    background: #4b5363;
+    /* background: #4b5363; */
     height: 20px;
     line-height: 20px;
     color: #fff;
@@ -180,16 +185,20 @@ h1, h2 {
     border-right: 14px solid transparent;
     margin-right: 20px;
 }
+.main_btn .more{
+    display: inline-block;
+    padding: 3px 10px;
+    float: left;
+    color: #aaa;
+    border: 1px solid #aaa;
+}
 .main_btn a{
     display: inline-block;
-    border-radius: 10px;
-    border: 1px solid #aaa;
-    padding: 3px 10px;
+    padding: 3px 0px;
     float: right;
     color: #aaa;
 }
 .main_btn a span{
-    margin-right: 8px;
     letter-spacing: 0.01rem;
 }
 .m-circle {
@@ -226,14 +235,16 @@ h1, h2 {
 }
 .main {
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .main p{
     margin-bottom: 20px;
     text-align: left;
+    /* text-align: justify; */
 }
 body {
-    background-image: url(../images/background.jpg);
-    /* background: #454e60; */
+    /* background-image: url(../images/background.jpg); */
+    background: #000;
     background-repeat: no-repeat;
     /* background-position: 100% 100%; */
     background-size: cover;
@@ -249,13 +260,20 @@ body {
 }
 
 footer {
-    display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    background-image: url(../images/weixin_bg_03.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 footer img{
-    height: 0.3rem;
+    width: 30%;
+    margin: 120px 35% 40px;
 }
 .three_h1 {
     line-height: 0.24rem;
+}
+
+.more_box {
+    display: none;
 }

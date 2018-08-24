@@ -1,70 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <style type="text/css">
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            ul,ol{
-                list-style: none;
-            }
-            /*消除图片底部3像素距离*/
-            img{
-                vertical-align: top;
-            }
-            .scroll{
-                width: 500px;
-                height: 200px;
-                margin: 100px auto;
-                border: 1px solid #ccc;
-                padding: 7px;
-                overflow: hidden;
-                position: relative;
-            }
-            .box{
-                width: 500px;
-                height: 200px;
-                overflow: hidden;
-                position: relative;
-            }
-            .box ul{
-                width: 600%;
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            .box ul li{
-                float: left;
-            }
-            .scroll ol{
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+    <video id="video" controls="controls" width="400" height="300" crossOrigin="Anonymous">
+        <source src="./vedio/qiye_weixin.mp4">
+    </video>
+    <br>
+    <br> 视频第一帧图片：
+    <div id="output"></div>
+    <script type="text/javascript">
+        (function() {
+            var video, output;
+            var scale = 0.8;
+            var initialize = function() {
+                output = document.getElementById("output");
+                video = document.getElementById("video");
+                video.addEventListener('loadeddata', captureImage);
+            };
+            var captureImage = function() {
+                var canvas = document.createElement("canvas");
+                canvas.width = video.videoWidth * scale;
+                canvas.height = video.videoHeight * scale;
+                canvas.getContext('2d').drawImage(video, 0, 0, canvas.width,
+                        canvas.height);
 
-            }
-            .scroll ol li{
-                float: left;
-                width: 20px;
-                height: 20px;
-                background: pink;
-                text-align: center;
-                line-height: 20px;
-                border-radius: 50%;
-                background-color: pink;             
-                margin-left:10px ;
-                cursor: pointer;
-            }
-            .scroll ol li.current{
-                background-color: purple;
-            }
-        </style>
-    </head>
-    <body>
-        <script>
-            alert('heheh')
-        </script>
-    </body>
+                var img = document.createElement("img");
+                img.src = canvas.toDataURL("image/png");
+                img.width = 400;
+                img.height = 300;
+                output.appendChild(img);
+            };
+            initialize();
+        })();
+    </script>
+</body>
 </html>

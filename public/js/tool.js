@@ -6,6 +6,7 @@ $(function () {
         theme: 'z',
         html: ""
     });
+
     var tag = true;
     var animateTime = 300;
     console.log("ready执行");
@@ -121,5 +122,18 @@ $(function () {
     $('.toDetail_debang1,.toDetail_debang2,.toDetail_debang3').click(function () {
         console.log($(this).attr('class'))
         window.location.href = "./detail_"+ $(this).attr('class').match(/debang\d{1}/g)[0] +".html";
+    })
+
+    $('.more').click(function () {
+        $(this).parent().next().next().toggle('fast');
+    })
+
+    $('.more').on('touchstart', function () {
+        $(this).css('background', '#fff');
+        $(this).css('color', '#000');
+    })
+    $('.more').on('touchend', function () {
+        $(this).css('background', '#000');
+        $(this).css('color', '#fff');
     })
 });
