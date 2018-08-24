@@ -47,8 +47,8 @@
 }
 
 p {
-    font-size: 0.14rem;
-    line-height: 0.24rem;
+    font-size: 0.15rem;
+    line-height: 0.26rem;
     margin-top: 0.24rem;
     color: #222839;
 }
@@ -98,7 +98,7 @@ h3 {
     background: #454e60;
     color: #fff;
     text-align: center;
-    padding: 2px 0;
+    padding: 4px 0;
 }
 .second_content {
     margin-top: 30px;
@@ -115,7 +115,7 @@ h3 {
     background: #454e60;
     color: #fff;
     text-align: center;
-    padding: 2px 0;
+    padding: 4px 0;
     text-indent: 0;
 }
 .fourth_content {
