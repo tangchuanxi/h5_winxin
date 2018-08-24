@@ -134,6 +134,6 @@ $(function () {
     })
     $('.more').on('touchend', function () {
         $(this).css('background', '#000');
-        $(this).css('color', '#fff');
+        $(this).css('color', '#666');
     })
 });
