@@ -50,6 +50,7 @@ p {
     font-size: 0.15rem;
     line-height: 0.26rem;
     margin-top: 0.24rem;
+    margin-bottom: 0.24rem;
     color: #222839;
 }
 h2 {
@@ -58,11 +59,12 @@ h2 {
 h3 {
     font-size: 0.18rem;
     color: #0082ef;
+    margin-top: 0.24rem;
 }
 .two_pix_line {
-    height: 2px;
+    height: 1px;
     widows: 100%;
-    background: #0082ef69;
+    background: #aaa;
 }
 .blue_font {
     color: #0082ef;
