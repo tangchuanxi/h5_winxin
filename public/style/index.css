@@ -21,7 +21,7 @@ h1, h2 {
     margin-top: 35px;
 }
 .title_main_font h2{
-    font-size: 0.4rem;
+    font-size: 0.31rem;
     letter-spacing: 4px;
 }
 .title_main_font p{
@@ -36,8 +36,8 @@ h1, h2 {
 }
 .jianjie p {
     text-align: center;
-    line-height: 0.24rem;
-
+    line-height: 0.20rem;
+    font-size: 0.1rem;
 }
 .index_title {
     padding-top: 40px;
@@ -52,6 +52,7 @@ h1, h2 {
     padding:0px 0 24px 0 ;
     display: flex;
     justify-content: center;
+    margin-top: -10px;
 }
 .banner .ul  {
     margin: 0 10px;
@@ -276,4 +277,11 @@ footer img{
 
 .more_box {
     display: none;
+}
+.small_rect {
+    display: inline-block;
+    background: #fff;
+    width: 0.08rem;
+    height: 0.08rem;
+    vertical-align: middle;
 }
